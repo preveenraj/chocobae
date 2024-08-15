@@ -1,6 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 
+import ContactUs from "./contact-us"
+
 export function Component() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
@@ -145,6 +147,7 @@ export function Component() {
             </div>
           </div>
         </section>
+      <ContactUs />
       </main>
       <footer className="bg-muted p-6 md:py-12 w-full">
         <div className="container max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm">
