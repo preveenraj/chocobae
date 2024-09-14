@@ -20,13 +20,13 @@ const fontBody = Space_Mono({
 export const metadata: Metadata = {
   title: "Chocobae!",
   description: "A delightful online shop for chocolate lovers.",
-  icons: "/main-banner.jpeg",
+  icons: "/main-banner.png",
   openGraph: {
     title: "Chocobae!",
     description: "A delightful online shop for chocolate lovers.",
     type: "website",
     url: "https://chocobae.in",
-    images: "https://chocobae.in/main-banner.jpeg",
+    images: "https://chocobae.in/main-banner.png",
   },
 };
 
