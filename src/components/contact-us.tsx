@@ -36,7 +36,7 @@ const ContactUs: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-2 min-[400px]:flex-row lg:justify-end">
+        {/* <div className="flex flex-col gap-2 min-[400px]:flex-row lg:justify-end">
           <Link
             href="#"
             className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
@@ -46,7 +46,7 @@ const ContactUs: React.FC = () => {
           >
             Contact Us
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );
