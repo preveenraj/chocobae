@@ -172,8 +172,11 @@ export function Component() {
             <Link href="#" prefetch={false}>
               Phone
             </Link>
-            <Link href="#" prefetch={false}>
-              Social Media
+            <Link href="https://www.instagram.com/thechocobaeshop/"
+              target="_blank"
+              rel="noopener noreferrer"
+              prefetch={false}>
+              Instagram
             </Link>
           </div>
         </div>
