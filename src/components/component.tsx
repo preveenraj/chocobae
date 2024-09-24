@@ -62,7 +62,7 @@ export function Component() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Explore Our Chocolate Varieties</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Explore Our Dessert Varieties</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   From rich dark chocolate to creamy milk chocolate, we offer a wide selection of delectable treats to
                   satisfy every craving.
