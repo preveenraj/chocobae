@@ -118,7 +118,7 @@ export function Component() {
             </div> */}
           </div>
         </section>
-      <ContactUs />
+        <ContactUs />
       </main>
       <footer className="bg-muted p-6 md:py-12 w-full">
         <div className="container max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm">
@@ -131,16 +131,25 @@ export function Component() {
           <div className="grid gap-1">
             <h3 className="font-semibold">Products</h3>
             <Link href="#" prefetch={false}>
-              Dark Chocolate
+              Crème de la crème
             </Link>
             <Link href="#" prefetch={false}>
-              Milk Chocolate
+              Crepe
             </Link>
             <Link href="#" prefetch={false}>
-              White Chocolate
+              Choco Luxe Bowl
             </Link>
             <Link href="#" prefetch={false}>
-              Chocolate Bars
+              Brownies
+            </Link>
+            <Link href="#" prefetch={false}>
+              Cakes
+            </Link>
+            <Link href="#" prefetch={false}>
+              Ice Cream
+            </Link>
+            <Link href="#" prefetch={false}>
+              Beverages
             </Link>
           </div>
           <div className="grid gap-1">
