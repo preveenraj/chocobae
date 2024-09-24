@@ -125,13 +125,7 @@ export function Component() {
           <div className="grid gap-1">
             <h3 className="font-semibold">Chocobae</h3>
             <Link href="#" prefetch={false}>
-              About Us
-            </Link>
-            <Link href="#" prefetch={false}>
               Our Story
-            </Link>
-            <Link href="#" prefetch={false}>
-              Careers
             </Link>
           </div>
           <div className="grid gap-1">
