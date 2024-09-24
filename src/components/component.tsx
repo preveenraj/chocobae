@@ -153,18 +153,6 @@ export function Component() {
             </Link>
           </div>
           <div className="grid gap-1">
-            <h3 className="font-semibold">Sustainability</h3>
-            <Link href="#" prefetch={false}>
-              Ethical Sourcing
-            </Link>
-            <Link href="#" prefetch={false}>
-              Sustainability Initiatives
-            </Link>
-            <Link href="#" prefetch={false}>
-              Environmental Impact
-            </Link>
-          </div>
-          <div className="grid gap-1">
             <h3 className="font-semibold">Legal</h3>
             <Link href="#" prefetch={false}>
               Privacy Policy
