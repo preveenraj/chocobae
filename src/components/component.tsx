@@ -1,21 +1,33 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
-import ContactUs from "./contact-us"
+import ContactUs from "./contact-us";
 
 export function Component() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <header className="px-4 lg:px-6 h-14 flex items-center">
-        <Link href="#" className="flex items-center justify-center" prefetch={false}>
+        <Link
+          href="#"
+          className="flex items-center justify-center"
+          prefetch={false}
+        >
           <CandyIcon className="h-6 w-6" />
           <span className="sr-only">Chocobae</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          <Link
+            href="#"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
             About
           </Link>
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          <Link
+            href="#"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
             Contact
           </Link>
         </nav>
@@ -33,10 +45,11 @@ export function Component() {
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                  {`Indulge in Chocobae's Artisanal Chocolates`}
+                  {`Indulge in Chocobae's Artisanal Chocolate Desserts`}
                 </h1>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  Discover the finest, ethically-sourced chocolate creations that will delight your senses.
+                  Discover the finest, chocolate dessert creations that will
+                  delight your senses.
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -62,10 +75,12 @@ export function Component() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Explore Our Dessert Varieties</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Explore Our Dessert Varieties
+                </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  From rich dark chocolate to creamy milk chocolate, we offer a wide selection of delectable treats to
-                  satisfy every craving.
+                  From rich dark chocolate to creamy milk chocolate, we offer a
+                  wide selection of delectable treats to satisfy every craving.
                 </p>
               </div>
             </div>
@@ -172,17 +187,19 @@ export function Component() {
             <Link href="#" prefetch={false}>
               Phone
             </Link>
-            <Link href="https://www.instagram.com/thechocobaeshop/"
+            <Link
+              href="https://www.instagram.com/thechocobaeshop/"
               target="_blank"
               rel="noopener noreferrer"
-              prefetch={false}>
+              prefetch={false}
+            >
               Instagram
             </Link>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
 
 function CandyIcon(props: any) {
@@ -205,5 +222,5 @@ function CandyIcon(props: any) {
       <path d="m16 7 1-5 1.37.68A3 3 0 0 0 19.7 3H21v1.3c0 .46.1.92.32 1.33L22 7l-5 1" />
       <path d="m8 17-1 5-1.37-.68A3 3 0 0 0 4.3 21H3v-1.3a3 3 0 0 0-.32-1.33L2 17l5-1" />
     </svg>
-  )
+  );
 }
