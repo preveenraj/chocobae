@@ -1,32 +1,32 @@
 import type { Metadata } from "next";
-import { DM_Sans } from 'next/font/google'
-import { Space_Mono } from 'next/font/google'
-import { cn } from '@/lib/utils'
-import './globals.css'
+import { DM_Sans } from "next/font/google";
+import { Space_Mono } from "next/font/google";
+import { cn } from "@/lib/utils";
+import "./globals.css";
 
 const fontHeading = DM_Sans({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-heading',
-})
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-heading",
+});
 
 const fontBody = Space_Mono({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-body',
-  weight: '400',
-})
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-body",
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "Chocobae!",
   description: "A delightful online shop for chocolate lovers.",
-  icons: "/main-banner.png",
+  icons: "/main-banner-with-background.png",
   openGraph: {
     title: "Chocobae!",
     description: "A delightful online shop for chocolate lovers.",
     type: "website",
     url: "https://chocobae.in",
-    images: "https://chocobae.in/main-banner.png",
+    images: "https://chocobae.in/main-banner-with-background.png",
   },
 };
 
@@ -37,12 +37,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body 
-        className={cn(
-          'antialiased',
-          fontHeading.variable,
-          fontBody.variable
-        )}
+      <body
+        className={cn("antialiased", fontHeading.variable, fontBody.variable)}
       >
         {children}
       </body>
