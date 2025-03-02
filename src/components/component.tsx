@@ -46,7 +46,7 @@ export function Component() {
               height="200"
               alt="Chocolate products"
               className="mx-auto overflow-hidden rounded-full object-cover sm:w-full aspect-square
-              shadow-2xl scale-50 hover:scale-75 transition-all duration-500 lg:order-last lg:aspect-square"
+              shadow-2xl scale-[0.9] hover:scale-[0.95] transition-all duration-1000 lg:order-last lg:aspect-square"
             />
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
