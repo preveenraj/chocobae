@@ -168,18 +168,6 @@ export function Component() {
             </Link>
           </div>
           <div className="grid gap-1">
-            <h3 className="font-semibold">Legal</h3>
-            <Link href="#" prefetch={false}>
-              Privacy Policy
-            </Link>
-            <Link href="#" prefetch={false}>
-              Terms of Service
-            </Link>
-            <Link href="#" prefetch={false}>
-              Refund Policy
-            </Link>
-          </div>
-          <div className="grid gap-1">
             <h3 className="font-semibold">Contact</h3>
             <Link href="#" prefetch={false}>
               Email
