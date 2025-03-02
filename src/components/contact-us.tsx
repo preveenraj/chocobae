@@ -17,7 +17,7 @@ const ContactUs: React.FC = () => {
             <div className="flex items-center gap-2">
               <PhoneIcon className="h-5 w-5 text-muted-foreground" />
               <a
-                href="tel:+17306307944"
+                href="tel:+917306307944"
                 className="text-muted-foreground"
                 aria-label="Call us at 730-630-7944"
               >
