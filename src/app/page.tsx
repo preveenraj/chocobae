@@ -1,10 +1,21 @@
-import { Component } from "@/components/component";
-import Image from "next/image";
+import { Navbar } from "@/components/navbar";
+import { Hero } from "@/components/hero";
+import { ProductShowcase } from "@/components/product-showcase";
+import { Footer } from "@/components/footer";
+import ContactUs from "@/components/contact-us";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-2">
-      <Component />
-    </main>
+    <div className="flex min-h-screen flex-col bg-background font-body selection:bg-accent selection:text-accent-foreground">
+      <Navbar />
+      <main className="flex-1">
+        <Hero />
+        <ProductShowcase />
+        <section id="contact" className="bg-muted/30 border-t border-border/50">
+          <ContactUs />
+        </section>
+      </main>
+      <Footer />
+    </div>
   );
 }
