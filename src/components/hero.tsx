@@ -11,6 +11,9 @@ export function Hero() {
             <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80">
               ★ 3.9/5 on Zomato (400+ Reviews)
             </div>
+            <div className="inline-flex ml-2 items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80">
+              Avg Cost: ₹400 for two
+            </div>
             <h1 className="font-heading text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-foreground">
               Indulge in <span className="text-accent">Chocobae</span>'s <br className="hidden lg:inline" /> Desserts & Beverages
             </h1>
