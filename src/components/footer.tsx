@@ -32,9 +32,9 @@ export function Footer() {
         <div className="space-y-4">
           <h4 className="font-semibold tracking-wide uppercase text-sm opacity-70">Connect</h4>
           <div className="space-y-3 text-sm">
-             <div className="flex items-center gap-2">
-                <MapPin className="h-4 w-4 shrink-0 text-accent" />
-                <span>Kochi, Kerala</span>
+             <div className="flex items-start gap-2">
+                <MapPin className="h-4 w-4 shrink-0 text-accent mt-0.5" />
+                <span>35/311-A3, Mini Bypass Road, Near RLV College, Tripunithura, Kochi</span>
              </div>
              <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 shrink-0 text-accent" />

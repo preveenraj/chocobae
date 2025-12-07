@@ -18,12 +18,12 @@ const fontBody = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Chocobae!",
-  description: "A delightful online shop for chocolate lovers.",
+  title: "Chocobae - Artisanal Chocolates & Desserts",
+  description: "Chocobae Tripunithura, Kochi. Handcrafted chocolate desserts, cakes, brownies, and beverages. View menu, reviews, contact, and location.",
   icons: "/main-banner-with-background.png",
   openGraph: {
-    title: "Chocobae!",
-    description: "A delightful online shop for chocolate lovers.",
+    title: "Chocobae - Artisanal Chocolates & Desserts",
+    description: "Chocobae Tripunithura, Kochi. Handcrafted chocolate desserts, cakes, brownies, and beverages.",
     type: "website",
     url: "https://chocobae.in",
     images: "https://chocobae.in/main-banner-with-background.png",

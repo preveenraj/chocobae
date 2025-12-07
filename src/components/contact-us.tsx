@@ -18,41 +18,73 @@ const ContactUs: React.FC = () => {
               <PhoneIcon className="h-5 w-5 text-muted-foreground" />
               <a
                 href="tel:+917306307944"
-                className="text-muted-foreground"
+                className="text-muted-foreground hover:text-foreground transition-colors"
                 aria-label="Call us at 730-630-7944"
               >
-                +917306307944
+                +91 730 630 7944
               </a>
             </div>
             <div className="flex items-center gap-2">
               <MailIcon className="h-5 w-5 text-muted-foreground" />
-              <span className="text-muted-foreground">
+              <a href="mailto:chocobae50@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors">
                 chocobae50@gmail.com
+              </a>
+            </div>
+            <div className="flex items-start gap-2">
+              <LocateIcon className="h-5 w-5 text-muted-foreground shrink-0 mt-1" />
+              <span className="text-muted-foreground">
+                35/311-A3, Mini Bypass Road, <br />
+                Near RLV College, Tripunithura, <br />
+                Kochi, Kerala 682301
               </span>
             </div>
             <div className="flex items-center gap-2">
-              <LocateIcon className="h-5 w-5 text-muted-foreground" />
-              <span className="text-muted-foreground">Kochi</span>
+              <ClockIcon className="h-5 w-5 text-muted-foreground" />
+              <span className="text-muted-foreground">12:30 PM – 10:30 PM (Daily)</span>
             </div>
           </div>
         </div>
-        {/* <div className="flex flex-col gap-2 min-[400px]:flex-row lg:justify-end">
-          <Link
-            href="#"
-            className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-            prefetch={false}
-            aria-label="Call us at 730-630-7944"
-            onClick={() => window.open("tel:+917306307944")}
-          >
-            Contact Us
-          </Link>
-        </div> */}
+        <div className="flex flex-col gap-2 min-[400px]:flex-row lg:justify-end">
+             {/* Map or Image could go here */}
+             <div className="w-full h-64 bg-muted rounded-xl border border-border flex items-center justify-center text-muted-foreground overflow-hidden">
+                <iframe 
+                  src="https://maps.google.com/maps?q=9.9420935277,76.3432815444&z=15&output=embed"
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0 }} 
+                  allowFullScreen={true} 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Chocobae Location"
+                ></iframe>
+             </div>
+        </div>
       </div>
     </section>
   );
 };
 
 export default ContactUs;
+
+function ClockIcon(props: any) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <circle cx="12" cy="12" r="10" />
+      <polyline points="12 6 12 12 16 14" />
+    </svg>
+  );
+}
 
 function LocateIcon(props: any) {
   return (
@@ -115,3 +147,4 @@ function PhoneIcon(props: any) {
     </svg>
   );
 }
+
