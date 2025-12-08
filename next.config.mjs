@@ -10,6 +10,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'maps.zomato.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'media-assets.swiggy.com',
+      },
     ],
   },
 };

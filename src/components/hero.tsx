@@ -9,7 +9,7 @@ export function Hero() {
         <div className="flex flex-col justify-center space-y-8 animate-in slide-in-from-bottom-10 fade-in duration-700">
           <div className="space-y-4">
             <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80">
-              ★ 3.9/5 on Zomato (400+ Reviews)
+              ★ 4.4/5 on Swiggy (298 ratings)
             </div>
             <div className="inline-flex ml-2 items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80">
               Avg Cost: ₹400 for two
@@ -23,12 +23,12 @@ export function Hero() {
           </div>
           <div className="flex flex-col gap-4 sm:flex-row">
             <Link
-              href="https://www.zomato.com/kochi/chocobae-tripunithura/order"
+              href="https://www.swiggy.com/city/kochi/chocobae-thrippunithura-rest956101"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex w-full sm:w-auto h-12 items-center justify-center rounded-full bg-[#E23744] px-8 text-base font-semibold text-white shadow-lg transition-all hover:bg-[#cb202d] hover:scale-105 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              className="inline-flex w-full sm:w-auto h-12 items-center justify-center rounded-full bg-[#FC8019] px-8 text-base font-semibold text-white shadow-lg transition-all hover:bg-[#e46d47] hover:scale-105 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
-              Order on Zomato
+              Order on Swiggy
             </Link>
             <Link
               href="https://www.instagram.com/thechocobaeshop/"
