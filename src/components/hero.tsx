@@ -21,12 +21,12 @@ export function Hero() {
               Handcrafted chocolate desserts that melt your heart. Experience the finest cakes, brownies, and beverages in Tripunithura, Kochi.
             </p>
           </div>
-          <div className="flex flex-col gap-4 min-[400px]:flex-row">
+          <div className="flex flex-col gap-4 sm:flex-row">
             <Link
               href="https://www.zomato.com/kochi/chocobae-tripunithura/order"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-12 items-center justify-center rounded-full bg-[#E23744] px-8 text-base font-semibold text-white shadow-lg transition-all hover:bg-[#cb202d] hover:scale-105 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              className="inline-flex w-full sm:w-auto h-12 items-center justify-center rounded-full bg-[#E23744] px-8 text-base font-semibold text-white shadow-lg transition-all hover:bg-[#cb202d] hover:scale-105 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
               Order on Zomato
             </Link>
@@ -34,7 +34,7 @@ export function Hero() {
               href="https://www.instagram.com/thechocobaeshop/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-12 items-center justify-center rounded-full border-2 border-primary/20 bg-background px-8 text-base font-medium text-foreground shadow-sm transition-all hover:border-[#E1306C] hover:text-[#E1306C] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              className="inline-flex w-full sm:w-auto h-12 items-center justify-center rounded-full border-2 border-primary/20 bg-background px-8 text-base font-medium text-foreground shadow-sm transition-all hover:border-[#E1306C] hover:text-[#E1306C] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
               Explore on Instagram
             </Link>
