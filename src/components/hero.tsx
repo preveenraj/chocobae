@@ -32,7 +32,7 @@ const FloatingShape = ({
   </motion.div>
 );
 
-export function Hero() {
+export function Hero({ googleRating = 4.9 }: { googleRating?: number }) {
   return (
     <section className="relative w-full overflow-hidden bg-background py-8 md:py-24 lg:py-32 xl:py-40">
       <div className="absolute inset-0 -z-10 opacity-20 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
@@ -54,7 +54,7 @@ export function Hero() {
                 className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground"
                 whileHover={{ scale: 1.05 }}
               >
-                ★ 4.9/5 on Google
+                ★ {googleRating}/5 on Google
               </motion.div>
               <motion.div
                 className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground"

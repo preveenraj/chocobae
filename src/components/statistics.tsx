@@ -7,37 +7,6 @@ import { Star, Users, Coffee, Award } from "lucide-react";
 const FOUNDED_YEAR = 2021;
 const yearsOfExcellence = new Date().getFullYear() - FOUNDED_YEAR;
 
-const stats = [
-  {
-    icon: Star,
-    value: 4.9,
-    suffix: "/5",
-    label: "Google Rating",
-    description: "Based on Google reviews",
-  },
-  {
-    icon: Users,
-    value: 2000,
-    suffix: "+",
-    label: "Happy Customers",
-    description: "And counting every day",
-  },
-  {
-    icon: Coffee,
-    value: 50,
-    suffix: "+",
-    label: "Unique Desserts",
-    description: "Crafted with love",
-  },
-  {
-    icon: Award,
-    value: yearsOfExcellence,
-    suffix: "",
-    label: "Years of Excellence",
-    description: `Serving Kochi since ${FOUNDED_YEAR}`,
-  },
-];
-
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -60,7 +29,37 @@ const itemVariants = {
   },
 };
 
-export function Statistics() {
+export function Statistics({ googleRating = 4.9 }: { googleRating?: number }) {
+  const stats = [
+    {
+      icon: Star,
+      value: googleRating,
+      suffix: "/5",
+      label: "Google Rating",
+      description: "Based on Google reviews",
+    },
+    {
+      icon: Users,
+      value: 2000,
+      suffix: "+",
+      label: "Happy Customers",
+      description: "And counting every day",
+    },
+    {
+      icon: Coffee,
+      value: 50,
+      suffix: "+",
+      label: "Unique Desserts",
+      description: "Crafted with love",
+    },
+    {
+      icon: Award,
+      value: yearsOfExcellence,
+      suffix: "",
+      label: "Years of Excellence",
+      description: `Serving Kochi since ${FOUNDED_YEAR}`,
+    },
+  ];
   return (
     <section className="w-full py-12 md:py-24 bg-gradient-to-b from-background to-secondary/20">
       <div className="container mx-auto px-4 md:px-6">

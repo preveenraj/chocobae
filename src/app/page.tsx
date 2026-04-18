@@ -9,8 +9,11 @@ import { FloatingChocolates } from "@/components/ui/floating-chocolates";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
 import { ScrollToTop } from "@/components/ui/scroll-to-top";
 import { CursorSparkle } from "@/components/ui/cursor-sparkle";
+import { getGoogleRating } from "@/lib/google-rating";
 
-export default function Home() {
+export default async function Home() {
+  const googleRating = await getGoogleRating();
+
   return (
     <div className="flex min-h-screen flex-col bg-background font-body selection:bg-accent selection:text-accent-foreground">
       <ScrollProgress />
@@ -18,8 +21,8 @@ export default function Home() {
       <CursorSparkle />
       <Navbar />
       <main className="flex-1">
-        <Hero />
-        <Statistics />
+        <Hero googleRating={googleRating} />
+        <Statistics googleRating={googleRating} />
         <ProductShowcase />
         <Testimonials />
         <section id="contact" className="bg-muted/30 border-t border-border/50">
