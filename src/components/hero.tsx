@@ -54,7 +54,7 @@ export function Hero() {
                 className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground"
                 whileHover={{ scale: 1.05 }}
               >
-                ★ 4.4/5 on Swiggy (298 ratings)
+                ★ 4.8/5 on Google
               </motion.div>
               <motion.div
                 className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground"
@@ -98,13 +98,13 @@ export function Hero() {
             <ConfettiButton
               onClick={() =>
                 window.open(
-                  "https://www.swiggy.com/city/kochi/chocobae-thrippunithura-rest956101",
+                  "https://wa.me/917306307944?text=Hi%20Chocobae!%20I'd%20like%20to%20place%20an%20order%20%F0%9F%8D%AB",
                   "_blank",
                 )
               }
-              className="inline-flex w-full sm:w-auto h-11 sm:h-12 items-center justify-center rounded-full bg-[#FC8019] px-6 sm:px-8 text-sm sm:text-base font-semibold text-white shadow-lg transition-all hover:bg-[#e46d47] hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              className="inline-flex w-full sm:w-auto h-11 sm:h-12 items-center justify-center rounded-full bg-[#25D366] px-6 sm:px-8 text-sm sm:text-base font-semibold text-white shadow-lg transition-all hover:bg-[#1ebe5a] hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
-              🎉 Order on Swiggy
+              💬 Order on WhatsApp
             </ConfettiButton>
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
               <Link
