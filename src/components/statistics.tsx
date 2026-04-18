@@ -4,10 +4,13 @@ import { motion } from "framer-motion";
 import { AnimatedCounter } from "./ui/animated-counter";
 import { Star, Users, Coffee, Award } from "lucide-react";
 
+const FOUNDED_YEAR = 2021;
+const yearsOfExcellence = new Date().getFullYear() - FOUNDED_YEAR;
+
 const stats = [
   {
     icon: Star,
-    value: 4.8,
+    value: 4.9,
     suffix: "/5",
     label: "Google Rating",
     description: "Based on Google reviews",
@@ -28,10 +31,10 @@ const stats = [
   },
   {
     icon: Award,
-    value: 3,
+    value: yearsOfExcellence,
     suffix: "",
     label: "Years of Excellence",
-    description: "Serving Kochi since 2021",
+    description: `Serving Kochi since ${FOUNDED_YEAR}`,
   },
 ];
 
