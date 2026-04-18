@@ -7,10 +7,10 @@ import { Star, Users, Coffee, Award } from "lucide-react";
 const stats = [
   {
     icon: Star,
-    value: 4.4,
+    value: 4.8,
     suffix: "/5",
-    label: "Swiggy Rating",
-    description: "Based on 298+ reviews",
+    label: "Google Rating",
+    description: "Based on Google reviews",
   },
   {
     icon: Users,
