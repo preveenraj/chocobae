@@ -40,7 +40,7 @@ const ContactUs: React.FC = () => {
             </div>
             <div className="flex items-center gap-2">
               <ClockIcon className="h-5 w-5 text-muted-foreground" />
-              <span className="text-muted-foreground">12:30 PM – 10:30 PM (Daily)</span>
+              <span className="text-muted-foreground">10:00 AM – 10:30 PM (Daily)</span>
             </div>
           </div>
         </div>
