@@ -32,7 +32,7 @@ const FloatingShape = ({
   </motion.div>
 );
 
-export function Hero() {
+export function Hero({ googleRating = 4.9 }: { googleRating?: number }) {
   return (
     <section className="relative w-full overflow-hidden bg-background py-8 md:py-24 lg:py-32 xl:py-40">
       <div className="absolute inset-0 -z-10 opacity-20 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
@@ -54,7 +54,7 @@ export function Hero() {
                 className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground"
                 whileHover={{ scale: 1.05 }}
               >
-                ★ 4.8/5 on Google
+                ★ {googleRating}/5 on Google
               </motion.div>
               <motion.div
                 className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground"
@@ -111,9 +111,9 @@ export function Hero() {
                 href="https://www.instagram.com/thechocobaeshop/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-full sm:w-auto h-11 sm:h-12 items-center justify-center rounded-full border-2 border-primary/20 bg-background px-6 sm:px-8 text-sm sm:text-base font-medium text-foreground shadow-sm transition-all hover:border-[#E1306C] hover:text-[#E1306C] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                className="inline-flex w-full sm:w-auto h-11 sm:h-12 items-center justify-center rounded-full bg-gradient-to-r from-[#833AB4] via-[#E1306C] to-[#F77737] px-6 sm:px-8 text-sm sm:text-base font-semibold text-white shadow-lg shadow-[#E1306C]/30 transition-all hover:shadow-xl hover:shadow-[#E1306C]/40 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#E1306C]"
               >
-                Explore on Instagram
+                📸 Explore on Instagram
               </Link>
             </motion.div>
           </motion.div>
