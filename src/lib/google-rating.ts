@@ -1,10 +1,11 @@
 const FALLBACK_RATING = 4.9;
+const CHOCOBAE_PLACE_ID = "ChIJd9YuaABzCDsRls8ecUDX2ek";
 
 export async function getGoogleRating(): Promise<number> {
   const apiKey = process.env.GOOGLE_PLACES_API_KEY;
-  const placeId = process.env.GOOGLE_PLACE_ID;
+  const placeId = process.env.GOOGLE_PLACE_ID ?? CHOCOBAE_PLACE_ID;
 
-  if (!apiKey || !placeId) return FALLBACK_RATING;
+  if (!apiKey) return FALLBACK_RATING;
 
   try {
     const res = await fetch(
